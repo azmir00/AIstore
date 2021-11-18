@@ -1,5 +1,6 @@
 import React from 'react'
 import { Row, Col, Card, Button, Table } from 'react-bootstrap'
+import trash from '../svg/trash-solid.svg';
 
 const CartScreen = () => {
     return (
@@ -16,12 +17,14 @@ const CartScreen = () => {
                             <Card.Text>
                                 <Row>
                                     <Col md={4}>
-                                        <img src="" width="250" height="200" alt="" />
+                                        <img src="https://images.unsplash.com/photo-1606813907291-d86efa9b94db?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1352&q=80" 
+                                        width="250" height="200" alt="" />
                                     </Col>
                                     <Col md={7}>
                                         <p><b>Product:</b> Snapback Jord Limited Edition</p>
                                         <p><b>Quantity:</b> 1</p>
                                         <p><b>Price:</b> RM 39.99</p>
+                                        <button><img src={trash} alt="" width="20"/></button>
                                     </Col>
                                 </Row>
                             </Card.Text>
