@@ -14,14 +14,14 @@ const Product = ({imageUrl, name, price, productId}) => {
                     <p>{name}</p>
                 </a>
                 <p>RM {price}</p>
-                <Link to={`/product/${productId}`}>
-                    <Button variant="outline-dark" className="mb-2">
+                <Link to={`/product/${productId}`} >
+                    <Button variant="outline-dark" className="btn1-prod">
                         View
                     </Button>
                 </Link>
-                <Button variant="outline-primary">
+                {/* <Button variant="outline-primary">
                     Add to Cart
-                </Button>
+                </Button> */}
 
             </Card>
         </div>

@@ -34,22 +34,28 @@ const CartScreen = () => {
 
     return (
         <div>
-            <Row>
-                <Button variant="outline-dark" className="mb-2">
-                    CONTINUE SHOPPING
-                </Button>
+            <Row className="mt-5 ml-5">
+                <Link to="/">
+                    <Button variant="outline-dark" className="mb-2" >
+                        CONTINUE SHOPPING
+                    </Button>
+                </Link>
             </Row>
-            <Row className="mt-5 pl-5 pr-5">
+            <Row className="mt-2 pl-5 pr-5">
                 <Col md={8}>
                     {
                         cartItems.length === 0 ? (
                             <h1>Your Cart is empty</h1>
                         ) : cartItems.map(item => (
+
                             <CartItem
+                                key={item.product}
                                 item={item}
                                 qtyChangeHandler={qtyChangeHandler}
                                 removeHandler={removeFromCartHandler}
                             />
+
+
                         ))
                     }
                 </Col>
@@ -62,7 +68,7 @@ const CartScreen = () => {
                                 <Table>
                                     <tbody>
                                         <tr>
-                                            <td>Total </td>
+                                            <td>Total ({getCartCount()}) items</td>
                                             <td>RM {getCartSubTotal()}</td>
                                         </tr>
                                         {/* <tr>
