@@ -1,17 +1,17 @@
-import React from 'react';
-import { Navbar, Nav, Container } from 'react-bootstrap';
-import ailogo from '../images/ai-store-logo.png';
-import Cartpic from '../svg/shopping-cart-solid.svg';
+import React from "react";
+import { Navbar, Nav, Container } from "react-bootstrap";
+import ailogo from "../images/ai-store-logo.png";
+import Cartpic from "../svg/shopping-cart-solid.svg";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 
 const TopNavbar = () => {
-    const cart = useSelector((state) => state.cart);
-    const { cartItems } = cart;
+  const cart = useSelector((state) => state.cart);
+  const { cartItems } = cart;
 
-    const getCartCount = () => {
-        return cartItems.reduce((qty, item) => Number(item.qty) + qty, 0);
-    };
+  const getCartCount = () => {
+    return cartItems.reduce((qty, item) => Number(item.qty) + qty, 0);
+  };
 
     return (
         <Navbar className="shadow">
@@ -24,17 +24,17 @@ const TopNavbar = () => {
                         {/* <Nav.Link href="/">HOME</Nav.Link> */}
                         <Link to="/" className="navb">HOME</Link>
                     </Nav.Item>
-                    <Nav.Item>
-                        {/* <Nav.Link href="#">PRODUCT</Nav.Link> */}
+                    {/* <Nav.Item>
+                        <Nav.Link href="#">PRODUCT</Nav.Link> 
                         <Link to="#" className="navb">PRODUCT</Link>
-                    </Nav.Item>
+                    </Nav.Item> */}
                     <Nav.Item>
                         {/* <Nav.Link href="#">CONTACT</Nav.Link> */}
-                        <Link to="#" className="navb">CONTACT</Link>
+                        <Link to="/contact" className="navb">CONTACT</Link>
                     </Nav.Item>
                     <Nav.Item>
                         {/* <Nav.Link href="#">ABOUT</Nav.Link> */}
-                        <Link to="#" className="navb">ABOUT</Link>
+                        <Link to="/about" className="navb">ABOUT</Link>
                     </Nav.Item>
                 </Nav>
             </Container>
@@ -56,4 +56,4 @@ const TopNavbar = () => {
     )
 }
 
-export default TopNavbar
+export default TopNavbar;

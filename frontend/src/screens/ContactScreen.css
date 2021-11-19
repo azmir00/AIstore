@@ -1,0 +1,24 @@
+.main-section {
+  background-color: lightgray;
+  padding: 10rem 0rem;
+}
+
+.contact-sub-section {
+  line-height: 3rem;
+  filter: drop-shadow(-3px 6px 5px rgba(94, 94, 94, 0.66));
+}
+
+.contact-number {
+  font-size: 1.1rem;
+}
+
+.section-box {
+  background-color: white;
+  margin: 3rem;
+}
+
+.support-button {
+  background-color: lightgray;
+  padding: 1rem 0rem;
+  font-size: 1.15rem;
+}
