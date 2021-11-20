@@ -11,15 +11,18 @@ import AboutScreen from "./screens/AboutScreen";
 
 // Components
 import TopNavbar from "./components/TopNavbar";
+import SigninScreen from "./screens/SigninScreen";
 
 function App() {
   return (
     <div className="App">
       <Router>
         <TopNavbar />
+
         <main>
           <Switch>
             <Route exact path="/" component={HomeScreen} />
+            <Route exact path="/signin" component={SigninScreen} />
             <Route exact path="/product/:id" component={ProductScreen} />
             <Route exact path="/cart" component={CartScreen} />
             <Route exact path="/contact" component={ContactScreen} />
