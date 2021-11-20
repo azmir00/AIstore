@@ -48,7 +48,7 @@ const TopNavbar = () => {
                     </Nav.Item>
                     <Nav.Item>
                         {/* <Nav.Link href="#">LOGIN</Nav.Link> */}
-                        <Link to="#" className="navb">LOGIN</Link>
+                        <Link to="/login" className="navb">LOGIN</Link>
                     </Nav.Item>
                 </Nav>
             </Container>

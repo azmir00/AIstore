@@ -8,9 +8,11 @@ import ProductScreen from "./screens/ProductScreen";
 import CartScreen from "./screens/CartScreen";
 import ContactScreen from "./screens/ContactScreen";
 import AboutScreen from "./screens/AboutScreen";
+import SigninScreen from "./screens/SigninScreen";
 
 // Components
 import TopNavbar from "./components/TopNavbar";
+import NavBarLogin from "./components/NavBarLogin";
 
 function App() {
   return (
@@ -24,6 +26,7 @@ function App() {
             <Route exact path="/cart" component={CartScreen} />
             <Route exact path="/contact" component={ContactScreen} />
             <Route exact path="/about" component={AboutScreen} />
+            <Route exact path="/login" component={SigninScreen} />
           </Switch>
         </main>
       </Router>
