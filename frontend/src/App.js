@@ -8,10 +8,10 @@ import ProductScreen from "./screens/ProductScreen";
 import CartScreen from "./screens/CartScreen";
 import ContactScreen from "./screens/ContactScreen";
 import AboutScreen from "./screens/AboutScreen";
+import SigninScreen from "./screens/SigninScreen";
 
 // Components
 import TopNavbar from "./components/TopNavbar";
-import SigninScreen from "./screens/SigninScreen";
 
 function App() {
   return (

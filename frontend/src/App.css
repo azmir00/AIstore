@@ -1,6 +1,6 @@
 /* -------Sign In Page------------- */
 .title-signin {
-    text-align: center;
+  text-align: center;
 }
 
 /* .signin{
@@ -8,103 +8,125 @@
     background-repeat: no-repeat; 
   } */
 
-.card-login {
-    width: 376px;
-    height: 376px;
-    margin-top: 150px;
-    margin-bottom: 150px;
+.card-signin {
+  width: 376px;
+  height: 376px;
+  margin-top: 150px;
+  margin-bottom: 150px;
 }
 
-.bg-signin{
-    background-image: url("./images/ai-store2.png");
-    /* background-repeat: no-repeat; */
-    width: 100%;
-    height: 100vh;
-    padding: 0;
-    margin: 0;
-  }
-   /* -------End Sign In Page------------- */
+.bg-signin {
+  background-image: url("./images/ai-store2.png");
+  /* background-repeat: no-repeat; */
+  width: 100%;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+/* -------End Sign In Page------------- */
 
-    /* -------Homepage------------- */
-    .row-homepage {
-      background-color: white;
-      justify-content: center;
-      width: 100%;
-  }
-
-  .card-homepage {
-      width: 80%;
-      margin-bottom: 150px;
-  }
-
-  .card-prod {
-    margin: 10px 20px 10px 20px;
-    padding: 10px 10px 10px 10px;
-  }
-  /* -------End Homepage------------- */
-
-    /* -------Product Detail Page------------- */
-    .row-productDetail {
-        background-color: #F9F9F9;
-        justify-content: center;
-        width: 100%;
-    }
-
-    .card-productDetail {
-        width: 70%;
-        margin-bottom: 150px;
-    }
-    /* -------End Product Detail Page------------- */
-
-
-    /* -------ADMIN PAGE------------- */
-
-    /* -------Admin Sign In------------- */
-    .bg-Asignin {
-      background-color: #e7e6e6;
-      width: 100%;
-      margin: 0;
-      justify-content: center;
-  }
-
-  .card-Asignin {
-      width: 30%;
-      margin: 15%;
-  }
-  /* -------End Admin Sign In------------- */
-
-  /* -------Admin Homepage------------- */
-  .bg-Ahomepage {
-    width: 100%;
-    margin: 0;
-    padding: 0;
+/* -------NavBar------------- */
+.nav-text,
+.profile-text {
+  color: gray;
+  margin: 0rem 5px;
 }
 
-  .test2 {
-    width: auto;
+.nav-text:hover {
+  color: darkslategrey;
+  margin: 0rem 5px;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: bold;
 }
 
-  .test3 {
-    white-space: nowrap;
-    border-top-right-radius:0;
+.profile-text:hover {
+  color: darkslategrey;
+  margin: 0rem 5px;
+  text-decoration: none;
+  cursor: none;
+}
+/* -------End of NavBar------------- */
+
+/* -------Homepage------------- */
+.row-homepage {
+  background-color: white;
+  justify-content: center;
+  width: 100%;
 }
 
-  .Asidepanel {
-    width: 100%;
-    margin: 0;
-    padding: 0;
+.card-homepage {
+  width: 80%;
+  margin-bottom: 150px;
+}
+
+.card-prod {
+  margin: 10px 20px 10px 20px;
+  padding: 10px 10px 10px 10px;
+}
+/* -------End Homepage------------- */
+
+/* -------Product Detail Page------------- */
+.row-productDetail {
+  background-color: #f9f9f9;
+  justify-content: center;
+  width: 100%;
+}
+
+.card-productDetail {
+  width: 70%;
+  margin-bottom: 150px;
+}
+/* -------End Product Detail Page------------- */
+
+/* -------ADMIN PAGE------------- */
+
+/* -------Admin Sign In------------- */
+.bg-Asignin {
+  background-color: #e7e6e6;
+  width: 100%;
+  margin: 0;
+  justify-content: center;
+}
+
+.card-Asignin {
+  width: 30%;
+  margin: 15%;
+}
+/* -------End Admin Sign In------------- */
+
+/* -------Admin Homepage------------- */
+.bg-Ahomepage {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.test2 {
+  width: auto;
+}
+
+.test3 {
+  white-space: nowrap;
+  border-top-right-radius: 0;
+}
+
+.Asidepanel {
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 /* -------End Admin Homepage------------- */
 
-  /* -------Add Product------------- */
-  .bg-Aadd {
-    background-color: #e7e6e6;
-    justify-content: center; 
+/* -------Add Product------------- */
+.bg-Aadd {
+  background-color: #e7e6e6;
+  justify-content: center;
 }
 
 .card-Add {
-    width: 50%;
-    margin: 5%;
+  width: 50%;
+  margin: 5%;
 }
 /* -------End Add Product------------- */
 
@@ -123,10 +145,12 @@
   margin: 50px;
 }
 
-.p-view, .p-edit, .p-del {
+.p-view,
+.p-edit,
+.p-del {
   width: 50%;
   margin: 5px;
 }
 /* -------End List Product------------- */
 
- /* -------END ADMIN PAGE------------- */
+/* -------END ADMIN PAGE------------- */
