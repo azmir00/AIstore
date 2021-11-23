@@ -5,13 +5,13 @@ import ailogo from "../images/ai-store-logo.png";
 import Cartpic from "../svg/shopping-cart-solid.svg";
 import { useDispatch, useSelector } from "react-redux";
 import { Link, useHistory } from "react-router-dom";
-// import signout from "../redux/actions/UserActions";
 
 const TopNavbar = () => {
   const cart = useSelector((state) => state.cart);
   const { cartItems } = cart;
-  const userInfo = localStorage.getItem("userInfo");
-  // const dispatch = useDispatch();
+  const userSignin = useSelector((state) => state.userSignin);
+  const { userInfo } = userSignin;
+  const dispatch = useDispatch();
 
   const history = useHistory();
 
@@ -59,20 +59,17 @@ const TopNavbar = () => {
             </Link>
           </Nav.Item>
 
-          {/* <div>
-            <Link to="/signin" className="nav-text">
-              LOGIN
-            </Link>
-          </div> */}
-
           <Dropdown>
             <Dropdown.Toggle
               variant="white"
               className="profile-text"
               id="dropdown-basic"
             >
-              {userInfo ? userInfo.name : "SIGNIN"}
-              {/* LOGIN */}
+              {userInfo ? (
+                <Nav.Link href="#">{userInfo.name}</Nav.Link>
+              ) : (
+                <Nav.Link>LOGIN</Nav.Link>
+              )}
             </Dropdown.Toggle>
 
             <Dropdown.Menu>
@@ -81,6 +78,7 @@ const TopNavbar = () => {
                   localStorage.removeItem("userInfo");
                   history.push("/signin");
                 }}
+                // onClick={signoutHandler}
               >
                 SIGN OUT
               </Dropdown.Item>

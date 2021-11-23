@@ -2,6 +2,7 @@ import {
   USER_SIGNIN_REQUEST,
   USER_SIGNIN_SUCCESS,
   USER_SIGNIN_FAIL,
+  USER_SIGNOUT,
 } from "../constants/UserConstants";
 
 import Axios from "axios";
@@ -25,3 +26,10 @@ const signin = (email, password) => async (dispatch) => {
 };
 
 export default signin;
+
+// const signout = () => (dispatch) => {
+//   localStorage.removeItem("userInfo");
+//   dispatch({ type: USER_SIGNOUT });
+// };
+
+// export default { signin, signout };
