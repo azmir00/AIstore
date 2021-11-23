@@ -59,7 +59,7 @@ const TopNavbar = () => {
 
           <div>
             {userInfo ? (
-              <div className="dropdown">
+              <div className="">
                 <Link to="#" className="profile-text">
                   {userInfo.name} <i className="fa fa-caret-down"></i>
                   {""}

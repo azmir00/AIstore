@@ -34,10 +34,12 @@ const CartScreen = () => {
 
     return (
         <div>
-            <Row>
-                <Button variant="outline-dark" className="mb-2">
-                    CONTINUE SHOPPING
-                </Button>
+            <Row className="mt-5 pl-5 pr-5">
+                <Link to="/">
+                    <Button variant="outline-dark" className="mb-2">
+                        CONTINUE SHOPPING
+                    </Button>
+                </Link>
             </Row>
             <Row className="mt-5 pl-5 pr-5">
                 <Col md={8}>

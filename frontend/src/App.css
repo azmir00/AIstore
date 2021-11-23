@@ -37,12 +37,13 @@
 .nav-text,
 .profile-text {
   color: gray;
-  margin: 0rem 5px;
+  font-size: 25px;
+  margin: 0px 15px 0px 15px;
 }
 
 .nav-text:hover {
   color: darkslategrey;
-  margin: 0rem 5px;
+  /* margin: 0rem 5px; */
   text-decoration: none;
   cursor: pointer;
   font-weight: bold;
