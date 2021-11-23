@@ -9,6 +9,7 @@ import CartScreen from "./screens/CartScreen";
 import ContactScreen from "./screens/ContactScreen";
 import AboutScreen from "./screens/AboutScreen";
 import SigninScreen from "./screens/SigninScreen";
+import ListProductScreen from "./screens/ListProductScreen";
 import RegisterScreen from "./screens/RegisterScreen";
 
 // Components
@@ -23,6 +24,7 @@ function App() {
         <main>
           <Switch>
             <Route exact path="/" component={HomeScreen} />
+            <Route exact path="/product" component={ListProductScreen} />
             <Route exact path="/signin" component={SigninScreen} />
             <Route exact path="/register" component={RegisterScreen} />
             <Route exact path="/product/:id" component={ProductScreen} />

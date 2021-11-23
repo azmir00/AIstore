@@ -17,24 +17,25 @@
 }
 
 .card-signin {
-  width: 376px;
-  height: auto;
-  margin-top: 150px;
-  margin-bottom: 150px;
+    width: 376px;
+    height: 376px;
+    margin-top: 150px;
+    margin-bottom: 150px;
 }
 
-.bg-signin {
-  background-image: url("./images/ai-store2.png");
-  /* background-repeat: no-repeat; */
-  width: 100%;
-  height: 100vh;
-  padding: 0;
-  margin: 0;
-}
-/* -------End Sign In Page------------- */
+.bg-signin{
+    background-image: url("./images/ai-store2.png");
+    /* background-repeat: no-repeat; */
+    width: 100%;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+  }
+   /* -------End Sign In Page------------- */
 
-/* -------NavBar------------- */
-.nav-text {
+   /* -------NavBar------------- */
+.nav-text,
+.profile-text {
   color: gray;
   margin: 0rem 5px;
 }
@@ -67,73 +68,138 @@
 }
 /* -------End of NavBar------------- */
 
-/* -------Homepage------------- */
-.row-homepage {
-  background-color: white;
-  justify-content: center;
+    /* -------Homepage------------- */
+    .row-homepage {
+      background-color: white;
+      justify-content: center;
+      width: 100%;
+  }
+
+  .card-homepage {
+      width: 80%;
+      margin-bottom: 150px;
+  }
+
+  .card-prod {
+    margin: 10px 20px 10px 20px;
+    padding: 10px 10px 10px 10px;
+  }
+
+  .btn1-prod {
+    width: 100%;
+  }
+  /* -------End Homepage------------- */
+
+  /* -------Product Category------------- */
+  .row-prod-cat {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+  .cat-btn-shop {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    margin: 200px 0px 0px 200px;
+  }
+
+  .cat-btn-shop2 {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    margin: 200px 0px 0px 300px;
+  }
+
+/* -------End Product Category------------- */
+
+/* -------Product Page------------- */
+.row-listprod {
   width: 100%;
+  margin-top: 40px;
 }
 
-.card-homepage {
-  width: 80%;
-  margin-bottom: 150px;
+.col-listprod {
+  margin-top: 10px;
 }
 
-.card-prod {
-  margin: 10px 20px 10px 20px;
-  padding: 10px 10px 10px 10px;
+.each-prod {
+  margin-top: 150px;
 }
-/* -------End Homepage------------- */
+/* -------End Product Page------------- */
 
-/* -------Product Detail Page------------- */
-.row-productDetail {
-  background-color: #f9f9f9;
-  justify-content: center;
+    /* -------Product Detail Page------------- */
+    .row-productDetail {
+        background-color: #F9F9F9;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .card-productDetail {
+        width: 70%;
+        margin-bottom: 150px;
+    }
+    /* -------End Product Detail Page------------- */
+
+/* -------Services Page------------- */
+.row-services {
   width: 100%;
+  margin-top: 10px;
 }
 
-.card-productDetail {
-  width: 70%;
-  margin-bottom: 150px;
+.col-services {
+  margin-left: 40px;
+  margin-right: 40px;
 }
-/* -------End Product Detail Page------------- */
+/* -------End Services Page------------- */
 
-/* -------ADMIN PAGE------------- */
-
-/* -------Admin Sign In------------- */
-.bg-Asignin {
-  background-color: #e7e6e6;
+/* -------Footer Page------------- */
+footer {
+  background-color: bisque;
   width: 100%;
-  margin: 0;
-  justify-content: center;
+  height: 50px;
+  margin-top: 50px;
+  text-align: center;
+}
+/* -------End Footer Page------------- */
+
+
+    /* -------ADMIN PAGE------------- */
+
+    /* -------Admin Sign In------------- */
+    .bg-Asignin {
+      background-color: #e7e6e6;
+      width: 100%;
+      margin: 0;
+      justify-content: center;
+  }
+
+  .card-Asignin {
+      width: 30%;
+      margin: 15%;
+  }
+  /* -------End Admin Sign In------------- */
+
+  /* -------Admin Homepage------------- */
+  .bg-Ahomepage {
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
-.card-Asignin {
-  width: 30%;
-  margin: 15%;
-}
-/* -------End Admin Sign In------------- */
-
-/* -------Admin Homepage------------- */
-.bg-Ahomepage {
-  width: 100%;
-  margin: 0;
-  padding: 0;
+  .test2 {
+    width: auto;
 }
 
-.test2 {
-  width: auto;
+  .test3 {
+    white-space: nowrap;
+    border-top-right-radius:0;
 }
 
-.test3 {
-  white-space: nowrap;
-  border-top-right-radius: 0;
-}
-
-.Asidepanel {
-  width: 100%;
-  margin: 0;
-  padding: 0;
+  .Asidepanel {
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
 /* -------End Admin Homepage------------- */
 

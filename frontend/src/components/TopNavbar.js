@@ -1,4 +1,3 @@
-import "../App.css";
 import React from "react";
 import { Navbar, Nav, Container, Dropdown } from "react-bootstrap";
 import ailogo from "../images/ai-store-logo.png";
@@ -33,7 +32,7 @@ const TopNavbar = () => {
             </Link>
           </Nav.Item>
           <Nav.Item>
-            <Link to="#" className="nav-text">
+            <Link to="/product" className="nav-text">
               PRODUCT
             </Link>
           </Nav.Item>

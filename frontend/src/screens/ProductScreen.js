@@ -67,11 +67,6 @@ const ProductScreen = ({ match, history }) => {
                                     </Button>
                                 </Col>
                             </Row>
-                            <Card.Body>
-                                <Card.Text className="">
-
-                                </Card.Text>
-                            </Card.Body>
                         </Card>
                     )
                 }
