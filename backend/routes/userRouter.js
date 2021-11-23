@@ -4,6 +4,7 @@ const bcrypt = require("bcryptjs");
 const data = require("../data.js");
 const User = require("../models/userModel.js");
 const generateToken = require("../utils.js");
+const { registerUser, authUser } = require("../controller/userControllers.js");
 
 const userRouter = express.Router();
 
@@ -17,27 +18,8 @@ userRouter.get(
   })
 );
 
-userRouter.post(
-  "/signin",
-  expressAsyncHandler(async (req, res) => {
-    // find any same user in database
-    const user = await User.findOne({ email: req.body.email });
-    // if any, then check password
-    if (user) {
-      // a bcrypt method that compare password from input & db
-      if (bcrypt.compareSync(req.body.password, user.password)) {
-        res.send({
-          _id: user._id,
-          name: user.name,
-          email: user.email,
-          isAdmin: user.isAdmin,
-          token: generateToken(user),
-        });
-        return;
-      }
-    }
-    res.status(401).send({ message: "Invalid email or password" });
-  })
-);
+userRouter.route("/").post(registerUser);
+// userRouter.route("/signin").post(authUser);
+userRouter.post("/signin", authUser);
 
 module.exports = userRouter;
