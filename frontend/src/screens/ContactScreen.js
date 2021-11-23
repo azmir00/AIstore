@@ -6,7 +6,7 @@ const ContactScreen = () => {
     <div>
       <div className="text-center main-section">
         <h1 className="font-weight-bolder">Contact Us</h1>
-        <h4 className="text-secondary mt-5">
+        <h4 className="text-white mt-5">
           Want to get in touch? We'd love to hear from you. Here's how you can
           reach us.
         </h4>
@@ -20,9 +20,14 @@ const ContactScreen = () => {
               Having problems with products in AI Store? Hit us up for any
               report.
             </h5>
-            <button className="btn support-button text-secondary" type="button">
-              Contact Support
-            </button>
+            <a
+              className="btn support-button text-secondary"
+              type="button"
+              href="https://web.whatsapp.com/"
+              target="_blank"
+            >
+              Customer Support
+            </a>
           </div>
 
           <div className="contact-sub-section col-md card m-md-5 p-5">
@@ -30,9 +35,14 @@ const ContactScreen = () => {
             <h5 className="my-5 text-secondary">
               Interested to join AI Store community? Contact our HR now.
             </h5>
-            <button className="btn support-button text-secondary" type="button">
-              Contact HR
-            </button>
+            <a
+              className="btn support-button text-secondary"
+              type="button"
+              href="https://web.whatsapp.com/"
+              target="_blank"
+            >
+              HR Support
+            </a>
           </div>
         </div>
       </div>

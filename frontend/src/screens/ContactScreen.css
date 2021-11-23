@@ -1,11 +1,14 @@
 .main-section {
-  background-color: lightgray;
+  background-color: #ffcb65;
+  /* background: linear-gradient(90deg, #ffcb65 0%, #c76607 100%); */
   padding: 10rem 0rem;
 }
 
 .contact-sub-section {
-  line-height: 3rem;
+  background: linear-gradient(181deg, #fcc250 0%, #ffffff 80%);
   filter: drop-shadow(-3px 6px 5px rgba(94, 94, 94, 0.66));
+  background-color: #ffcb65;
+  border: none;
 }
 
 .contact-number {

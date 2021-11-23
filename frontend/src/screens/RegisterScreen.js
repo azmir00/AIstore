@@ -42,7 +42,7 @@ export default function RegisterScreen() {
         );
         setLoading(false);
         localStorage.setItem("userInfo", JSON.stringify(data));
-        history.push("/");
+        history.push("/signin");
       } catch (error) {
         setError(error.response.data.message);
         setLoading(false);
