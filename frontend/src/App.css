@@ -1,4 +1,5 @@
 /* -------Sign In Page------------- */
+.title-register,
 .title-signin {
   text-align: center;
 }
@@ -8,9 +9,16 @@
     background-repeat: no-repeat; 
   } */
 
+.card-register {
+  width: 376px;
+  height: auto;
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
+
 .card-signin {
   width: 376px;
-  height: 376px;
+  height: auto;
   margin-top: 150px;
   margin-bottom: 150px;
 }
@@ -26,8 +34,7 @@
 /* -------End Sign In Page------------- */
 
 /* -------NavBar------------- */
-.nav-text,
-.profile-text {
+.nav-text {
   color: gray;
   margin: 0rem 5px;
 }
@@ -38,6 +45,18 @@
   text-decoration: none;
   cursor: pointer;
   font-weight: bold;
+}
+
+.profile-text {
+  color: gray;
+  margin: 0rem 5px;
+  text-decoration: none;
+}
+
+.profile-text:hover {
+  color: gray;
+  margin: 0rem 5px;
+  text-decoration: none;
 }
 
 .profile-text:hover {

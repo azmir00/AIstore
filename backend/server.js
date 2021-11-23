@@ -4,6 +4,7 @@ const express = require("express");
 const connectDB = require("./config/db");
 const productRoutes = require("./routes/productRoutes");
 const userRouter = require("./routes/userRouter");
+const { notFound, errorHandler } = require("./middlewares/errorMiddleware");
 
 dotenv.config();
 
@@ -22,9 +23,11 @@ app.use("/api/products", productRoutes);
 app.use("/api/users", userRouter);
 
 // Error catcher middleware
-app.use((err, req, res, next) => {
-  res.status(500).send({ message: err.message });
-});
+app.use(notFound);
+app.use(errorHandler);
+// app.use((err, req, res, next) => {
+//   res.status(500).send({ message: err.message });
+// });
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
