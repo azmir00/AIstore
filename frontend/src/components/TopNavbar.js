@@ -1,10 +1,9 @@
 import React from "react";
-import { Navbar, Nav, Container } from "react-bootstrap";
+import { Navbar, Nav, Container, Dropdown } from "react-bootstrap";
 import ailogo from "../images/ai-store-logo.png";
 import Cartpic from "../svg/shopping-cart-solid.svg";
 import { useDispatch, useSelector } from "react-redux";
-import { Link } from "react-router-dom";
-import signout from "../redux/actions/UserActions";
+import { Link, useHistory } from "react-router-dom";
 
 const TopNavbar = () => {
   const cart = useSelector((state) => state.cart);
@@ -12,6 +11,8 @@ const TopNavbar = () => {
   const userSignin = useSelector((state) => state.userSignin);
   const { userInfo } = userSignin;
   const dispatch = useDispatch();
+
+  const history = useHistory();
 
   const getCartCount = () => {
     return cartItems.reduce((qty, item) => Number(item.qty) + qty, 0);
@@ -57,20 +58,31 @@ const TopNavbar = () => {
             </Link>
           </Nav.Item>
 
-          <div>
-            {userInfo ? (
-              <div className="">
-                <Link to="#" className="profile-text">
-                  {userInfo.name} <i className="fa fa-caret-down"></i>
-                  {""}
-                </Link>
-              </div>
-            ) : (
-              <Link to="/signin" className="nav-text">
-                LOGIN
-              </Link>
-            )}
-          </div>
+          <Dropdown>
+            <Dropdown.Toggle
+              variant="white"
+              className="profile-text"
+              id="dropdown-basic"
+            >
+              {userInfo ? (
+                <Nav.Link href="#">{userInfo.name}</Nav.Link>
+              ) : (
+                <Nav.Link>LOGIN</Nav.Link>
+              )}
+            </Dropdown.Toggle>
+
+            <Dropdown.Menu>
+              <Dropdown.Item
+                onClick={() => {
+                  localStorage.removeItem("userInfo");
+                  history.push("/signin");
+                }}
+                // onClick={signoutHandler}
+              >
+                SIGN OUT
+              </Dropdown.Item>
+            </Dropdown.Menu>
+          </Dropdown>
         </Nav>
       </Container>
     </Navbar>

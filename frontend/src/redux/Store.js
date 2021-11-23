@@ -10,13 +10,13 @@ import {
 } from "./reducers/ProductReducers";
 import { userSigninReducer } from "./reducers/UserReducers";
 
-// const initialState = {
-//   userSignin: {
-//     userInfo: localStorage.getItem("userInfo")
-//       ? JSON.parse(localStorage.getItem("userInfo"))
-//       : null,
-//   },
-// };
+const initialState = {
+  userSignin: {
+    userInfo: localStorage.getItem("userInfo")
+      ? JSON.parse(localStorage.getItem("userInfo"))
+      : null,
+  },
+};
 
 const reducer = combineReducers({
   cart: cartReducer,
@@ -29,8 +29,8 @@ const middleware = [thunk];
 
 const store = createStore(
   reducer,
+  // initialState,
   composeWithDevTools(applyMiddleware(...middleware))
-  // initialState
 );
 
 export default store;

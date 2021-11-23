@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { Card, Button, Form, Row, Col } from "react-bootstrap";
 import { Link, useHistory } from "react-router-dom";
+import { useDispatch } from "react-redux";
 import axios from "axios";
 import Loading from "../components/Loading";
 import ErrorMessage from "../components/ErrorMessage";
+import signin from "../redux/actions/UserActions";
 
 export default function SigninScreen() {
   const [email, setEmail] = useState("");
@@ -12,12 +14,15 @@ export default function SigninScreen() {
   const [loading, setLoading] = useState(false);
   const history = useHistory();
 
+  const dispatch = useDispatch();
+
   // const redirect = props.location.search
   //   ? props.location.search.split("=")[1]
   //   : "/";
 
   const submitHandler = async (e) => {
     e.preventDefault();
+    dispatch(signin(email, password));
 
     // call API@data
     try {
