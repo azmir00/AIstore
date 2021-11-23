@@ -62,7 +62,7 @@ export default function SigninScreen() {
   // }, [history]);
 
   return (
-    <div>
+    <>
       {/* <NavBarLogin /> */}
       <Row className="bg-signin">
         <Col md={8}></Col>
@@ -129,6 +129,6 @@ export default function SigninScreen() {
           </Card>
         </Col>
       </Row>
-    </div>
+    </>
   );
 }

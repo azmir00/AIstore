@@ -1,5 +1,5 @@
 import React from "react";
-import { Navbar, Nav, Container, Dropdown } from "react-bootstrap";
+import { Navbar, Nav, Container, Dropdown, Button } from "react-bootstrap";
 import ailogo from "../images/ai-store-logo.png";
 import Cartpic from "../svg/shopping-cart-solid.svg";
 import { useDispatch, useSelector } from "react-redux";
@@ -58,31 +58,26 @@ const TopNavbar = () => {
             </Link>
           </Nav.Item>
 
-          <Dropdown>
-            <Dropdown.Toggle
-              variant="white"
-              className="profile-text"
-              id="dropdown-basic"
-            >
-              {userInfo ? (
-                <Nav.Link href="#">{userInfo.name}</Nav.Link>
-              ) : (
-                <Nav.Link>LOGIN</Nav.Link>
-              )}
-            </Dropdown.Toggle>
-
-            <Dropdown.Menu>
-              <Dropdown.Item
-                onClick={() => {
+          <Nav.Item>
+            {
+              userInfo ? (
+                <Button className="nav-text" onClick={() => {
                   localStorage.removeItem("userInfo");
                   history.push("/signin");
-                }}
-                // onClick={signoutHandler}
-              >
-                SIGN OUT
-              </Dropdown.Item>
-            </Dropdown.Menu>
-          </Dropdown>
+                }}>
+                  {userInfo.name}
+                </Button>
+                // <Link
+                //   onClick={() => {
+                //     localStorage.removeItem("userInfo");
+                //     history.push("/signin");
+                //   }}
+                // >{userInfo.name}</Link>
+              ) : (
+                <Link to="/signin"><Button className="nav-text">LOGIN</Button></Link>
+              )
+            }
+          </Nav.Item>
         </Nav>
       </Container>
     </Navbar>

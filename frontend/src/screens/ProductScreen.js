@@ -62,9 +62,9 @@ const ProductScreen = ({ match, history }) => {
                                     <Button variant="secondary" size="lg" className="mr-5" onClick={addToCartHandler} active>
                                         Add to Cart
                                     </Button>
-                                    <Button variant="secondary" size="lg" active>
+                                    {/* <Button variant="secondary" size="lg" active>
                                         Buy Now
-                                    </Button>
+                                    </Button> */}
                                 </Col>
                             </Row>
                         </Card>

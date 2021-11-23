@@ -28,7 +28,7 @@ const ListProductScreen = () => {
                         ) : (
 
                             products.map((product) => (
-                                <Col md={4} className="col-listprod">
+                                <Col md={3} className="col-listprod">
                                     <Product
                                         key={product._id}
                                         productId={product._id}
