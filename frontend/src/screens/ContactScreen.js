@@ -17,7 +17,7 @@ const ContactScreen = () => {
           <div className="contact-sub-section col-md card m-md-5 p-5">
             <h4>Contact Customer Support</h4>
             <h5 className="my-5 text-secondary">
-              Having problems with products in AI Store? Hit us ap for any
+              Having problems with products in AI Store? Hit us up for any
               report.
             </h5>
             <button className="btn support-button text-secondary" type="button">

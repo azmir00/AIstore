@@ -13,22 +13,22 @@ import ListProductScreen from "./screens/ListProductScreen";
 
 // Components
 import TopNavbar from "./components/TopNavbar";
-import NavBarLogin from "./components/NavBarLogin";
 
 function App() {
   return (
     <div className="App">
       <Router>
         <TopNavbar />
+
         <main>
           <Switch>
             <Route exact path="/" component={HomeScreen} />
             <Route exact path="/product" component={ListProductScreen} />
+            <Route exact path="/signin" component={SigninScreen} />
             <Route exact path="/product/:id" component={ProductScreen} />
             <Route exact path="/cart" component={CartScreen} />
             <Route exact path="/contact" component={ContactScreen} />
             <Route exact path="/about" component={AboutScreen} />
-            <Route exact path="/login" component={SigninScreen} />
           </Switch>
         </main>
       </Router>

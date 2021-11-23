@@ -1,13 +1,6 @@
-
-/* -------NavBar------------- */
-.navb {
-  margin: 0 10px 0 10px;
-}
-/* -------End NavBar------------- */
-
 /* -------Sign In Page------------- */
 .title-signin {
-    text-align: center;
+  text-align: center;
 }
 
 /* .signin{
@@ -15,7 +8,7 @@
     background-repeat: no-repeat; 
   } */
 
-.card-login {
+.card-signin {
     width: 376px;
     height: 376px;
     margin-top: 150px;
@@ -31,6 +24,29 @@
     margin: 0;
   }
    /* -------End Sign In Page------------- */
+
+   /* -------NavBar------------- */
+.nav-text,
+.profile-text {
+  color: gray;
+  margin: 0rem 5px;
+}
+
+.nav-text:hover {
+  color: darkslategrey;
+  margin: 0rem 5px;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.profile-text:hover {
+  color: darkslategrey;
+  margin: 0rem 5px;
+  text-decoration: none;
+  cursor: none;
+}
+/* -------End of NavBar------------- */
 
     /* -------Homepage------------- */
     .row-homepage {
@@ -167,15 +183,15 @@ footer {
 }
 /* -------End Admin Homepage------------- */
 
-  /* -------Add Product------------- */
-  .bg-Aadd {
-    background-color: #e7e6e6;
-    justify-content: center; 
+/* -------Add Product------------- */
+.bg-Aadd {
+  background-color: #e7e6e6;
+  justify-content: center;
 }
 
 .card-Add {
-    width: 50%;
-    margin: 5%;
+  width: 50%;
+  margin: 5%;
 }
 /* -------End Add Product------------- */
 
@@ -194,10 +210,12 @@ footer {
   margin: 50px;
 }
 
-.p-view, .p-edit, .p-del {
+.p-view,
+.p-edit,
+.p-del {
   width: 50%;
   margin: 5px;
 }
 /* -------End List Product------------- */
 
- /* -------END ADMIN PAGE------------- */
+/* -------END ADMIN PAGE------------- */

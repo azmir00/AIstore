@@ -20,14 +20,9 @@ const ProductScreen = ({ match, history }) => {
 
     const addToCartHandler = () => {
         dispatch(addToCart(product._id, qty));
-        
-    };
-
-    // const buyNowHandler = () => {
-    //     dispatch(addToCart(product._id, 1));
-    //     history.push(`/cart`);
-    // };
-
+        history.push(`/cart`);
+      };
+    
 
 
     return (
@@ -54,7 +49,7 @@ const ProductScreen = ({ match, history }) => {
                                     <p><b>Description: </b></p>
                                     <p>{product.description}</p>
                                     <p>
-                                        Quantity :
+                                        Quantity : 
                                         <select name="qty" value={qty} onChange={(e) => setQty(e.target.value)}>
                                             {[...Array(product.countInStock).keys()].map((x) => (
                                                 <option key={x + 1} value={x + 1}>
@@ -67,9 +62,9 @@ const ProductScreen = ({ match, history }) => {
                                     <Button variant="secondary" size="lg" className="mr-5" onClick={addToCartHandler} active>
                                         Add to Cart
                                     </Button>
-                                    {/* <Button variant="secondary" size="lg" active onClick={buyNowHandler}>
+                                    <Button variant="secondary" size="lg" active>
                                         Buy Now
-                                    </Button> */}
+                                    </Button>
                                 </Col>
                             </Row>
                         </Card>

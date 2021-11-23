@@ -5,7 +5,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
 import CartItem from '../components/CartItem';
 import { addToCart, removeFromCart } from '../redux/actions/CartActions';
-let x = 0;
+
 const CartScreen = () => {
     const dispatch = useDispatch();
 
@@ -34,28 +34,22 @@ const CartScreen = () => {
 
     return (
         <div>
-            <Row className="mt-5 ml-5">
-                <Link to="/">
-                    <Button variant="outline-dark" className="mb-2" >
-                        CONTINUE SHOPPING
-                    </Button>
-                </Link>
+            <Row>
+                <Button variant="outline-dark" className="mb-2">
+                    CONTINUE SHOPPING
+                </Button>
             </Row>
-            <Row className="mt-2 pl-5 pr-5">
+            <Row className="mt-5 pl-5 pr-5">
                 <Col md={8}>
                     {
                         cartItems.length === 0 ? (
                             <h1>Your Cart is empty</h1>
                         ) : cartItems.map(item => (
-
                             <CartItem
-                                key={item.product}
                                 item={item}
                                 qtyChangeHandler={qtyChangeHandler}
                                 removeHandler={removeFromCartHandler}
                             />
-
-
                         ))
                     }
                 </Col>
@@ -68,7 +62,7 @@ const CartScreen = () => {
                                 <Table>
                                     <tbody>
                                         <tr>
-                                            <td>Total ({getCartCount()}) items</td>
+                                            <td>Total </td>
                                             <td>RM {getCartSubTotal()}</td>
                                         </tr>
                                         {/* <tr>
