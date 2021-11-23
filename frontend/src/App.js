@@ -9,6 +9,7 @@ import CartScreen from "./screens/CartScreen";
 import ContactScreen from "./screens/ContactScreen";
 import AboutScreen from "./screens/AboutScreen";
 import SigninScreen from "./screens/SigninScreen";
+import ListProductScreen from "./screens/ListProductScreen";
 
 // Components
 import TopNavbar from "./components/TopNavbar";
@@ -22,6 +23,7 @@ function App() {
         <main>
           <Switch>
             <Route exact path="/" component={HomeScreen} />
+            <Route exact path="/product" component={ListProductScreen} />
             <Route exact path="/product/:id" component={ProductScreen} />
             <Route exact path="/cart" component={CartScreen} />
             <Route exact path="/contact" component={ContactScreen} />

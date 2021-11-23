@@ -2,29 +2,30 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Card, Button } from 'react-bootstrap'
 
-const Product = ({imageUrl, name, price, productId}) => {
+const Product = ({ imageUrl, name, price, productId }) => {
     return (
-        <div>
-            <Card className="shadow card-prod" >
-                <a href="">
-                    <img src={imageUrl} 
+        <>
+            <Card  >
+                <Card.Img
+                    src={imageUrl}
                     width="100%" height="300" alt={name} />
-                </a>
-                <a href="">
-                    <p>{name}</p>
-                </a>
-                <p>RM {price}</p>
-                <Link to={`/product/${productId}`} >
-                    <Button variant="outline-dark" className="btn1-prod">
-                        View
-                    </Button>
-                </Link>
-                {/* <Button variant="outline-primary">
-                    Add to Cart
-                </Button> */}
-
+                <Card.ImgOverlay className="each-prod">
+                    <Card.Title>
+                        <span style={{backgroundColor: 'white'}}>{name}</span>
+                    </Card.Title>
+                    <Card.Text>
+                        <span style={{backgroundColor: 'white'}}>RM {price}</span>
+                    </Card.Text>
+                    <Card.Text>
+                        <Link to={`/product/${productId}`} >
+                            <Button variant="dark" className="btn1-prod">
+                                View
+                            </Button>
+                        </Link>
+                    </Card.Text>
+                </Card.ImgOverlay>
             </Card>
-        </div>
+        </>
     )
 }
 

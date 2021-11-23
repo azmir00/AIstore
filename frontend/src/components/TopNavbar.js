@@ -24,10 +24,9 @@ const TopNavbar = () => {
                         {/* <Nav.Link href="/">HOME</Nav.Link> */}
                         <Link to="/" className="navb">HOME</Link>
                     </Nav.Item>
-                    {/* <Nav.Item>
-                        <Nav.Link href="#">PRODUCT</Nav.Link> 
-                        <Link to="#" className="navb">PRODUCT</Link>
-                    </Nav.Item> */}
+                    <Nav.Item>
+                        <Link to="/product" className="navb">PRODUCT</Link>
+                    </Nav.Item>
                     <Nav.Item>
                         {/* <Nav.Link href="#">CONTACT</Nav.Link> */}
                         <Link to="/contact" className="navb">CONTACT</Link>
