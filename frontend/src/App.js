@@ -13,7 +13,6 @@ import ListProductScreen from "./screens/ListProductScreen";
 import RegisterScreen from "./screens/RegisterScreen";
 
 // Components
-import TopNavbar from "./components/TopNavbar";
 import { useSelector } from "react-redux";
 
 function App() {
@@ -22,7 +21,6 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <TopNavbar />
         <main>
           <Switch>
             <Route exact path="/" component={HomeScreen} />

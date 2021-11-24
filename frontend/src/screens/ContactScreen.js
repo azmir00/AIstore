@@ -1,51 +1,63 @@
 import React from "react";
 import "./ContactScreen.css";
+import { Col, Form, Row, Button } from "react-bootstrap";
+import TopNavbar from "../components/TopNavbar";
+import Footer from "../components/Footer";
+import piccontact from "../images/contact-us.png";
 
 const ContactScreen = () => {
   return (
     <div>
-      <div className="text-center main-section">
-        <h1 className="font-weight-bolder">Contact Us</h1>
-        <h4 className="text-white mt-5">
-          Want to get in touch? We'd love to hear from you. Here's how you can
-          reach us.
-        </h4>
+      <TopNavbar />
+
+      <div className="pic-contact">
+        <img src={piccontact} alt="contact us" />
       </div>
 
-      <div className="container">
-        <div className="contact-section text-center row">
-          <div className="contact-sub-section col-md card m-md-5 p-5">
-            <h4>Contact Customer Support</h4>
-            <h5 className="my-5 text-secondary">
-              Having problems with products in AI Store? Hit us up for any
-              report.
-            </h5>
-            <a
-              className="btn support-button text-secondary"
-              type="button"
-              href="https://web.whatsapp.com/"
-              target="_blank"
-            >
-              Customer Support
-            </a>
-          </div>
+      <div className="contact">
+        <h3 style={{color: '#ffcb65'}}>Get In Touch</h3>
+        <br />
+        <div>
+          <Row className="no-gutters">
+              <Col md={6}>
+              <div className="form-contact">
+                <Form>
+                  <Form.Group controlId="formGridEmail">
+                    <Form.Label>Email</Form.Label>
+                    <Form.Control type="email" />
+                  </Form.Group>
 
-          <div className="contact-sub-section col-md card m-md-5 p-5">
-            <h4>Career Kick Start</h4>
-            <h5 className="my-5 text-secondary">
-              Interested to join AI Store community? Contact our HR now.
-            </h5>
-            <a
-              className="btn support-button text-secondary"
-              type="button"
-              href="https://web.whatsapp.com/"
-              target="_blank"
-            >
-              HR Support
-            </a>
-          </div>
+                  <Form.Group controlId="formSubject">
+                    <Form.Label>Subject</Form.Label>
+                    <Form.Control type="text" />
+                  </Form.Group>
+
+                  <Form.Group controlId="exampleForm.ControlTextarea1">
+                    <Form.Label>Message</Form.Label>
+                    <Form.Control as="textarea" rows={5} />
+                  </Form.Group>
+                  <br />
+                  <Button variant="primary" type="submit">
+                    Submit
+                  </Button>
+                </Form>
+                </div>
+              </Col>
+
+              <Col md={6}>
+                <div className="add-contact">
+                  <h4 style={{color: '#ffcb65'}}>Address</h4>
+                  <p>Tingkat 11,
+                    Suria KLCC, Kuala Lumpur City Centre,
+                    50088 Kuala Lumpur,
+                    Wilayah Persekutuan Kuala Lumpur.</p>
+                </div>
+              </Col>
+          </Row>
         </div>
       </div>
+
+      <Footer />
     </div>
   );
 };

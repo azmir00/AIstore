@@ -4,6 +4,7 @@ import { useEffect } from 'react';
 import { useSelector, useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
 import CartItem from '../components/CartItem';
+import TopNavbar from '../components/TopNavbar';
 import { addToCart, removeFromCart } from '../redux/actions/CartActions';
 
 const CartScreen = () => {
@@ -33,7 +34,9 @@ const CartScreen = () => {
     };
 
     return (
-        <div>
+        <>
+            <TopNavbar />
+            
             <Row className="mt-5 pl-5 pr-5">
                 <Link to="/">
                     <Button variant="outline-dark" className="mb-2">
@@ -88,7 +91,7 @@ const CartScreen = () => {
                     </Card>
                 </Col>
             </Row>
-        </div>
+        </>
     )
 }
 

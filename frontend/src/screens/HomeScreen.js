@@ -1,9 +1,9 @@
 import React from 'react'
 import { Row, Col } from 'react-bootstrap'
+import TopNavbar from "../components/TopNavbar";
 import Product from '../components/Product'
 import ImageSlider from '../components/ImageSlider'
 import ProdCat from '../components/ProdCat'
-import Services from '../components/Services'
 import Footer from '../components/Footer'
 import { useEffect } from 'react'
 import { useSelector, useDispatch } from 'react-redux';
@@ -22,34 +22,9 @@ const HomeScreen = () => {
     }, [dispatch]);
     return (
         <>
+            <TopNavbar />
             <ImageSlider />
-            <Services />
             <ProdCat />
-            {/* <Row className="row-homepage">
-                <Row className="card-homepage mt-3 shadow">
-                    {
-                        loading ? (
-                            <h2>Loading...</h2>
-                        ) : error ? (
-                            <h2>{error}</h2>
-                        ) : (
-
-                            products.map((product) => (
-                                <Col md={4}>
-                                    <Product
-                                        key={product._id}
-                                        productId={product._id}
-                                        name={product.name}
-                                        price={product.price}
-                                        imageUrl={product.imageUrl}
-                                    />
-                                </Col>
-                            ))
-                        )
-                    }
-
-                </Row>
-            </Row> */}
             <Footer />
         </>
     )

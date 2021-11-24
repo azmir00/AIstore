@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import NavBarLogin from "../components/NavBarLogin";
 import { useDispatch, useSelector } from "react-redux";
 import { Card, Button, Form, Row, Col } from "react-bootstrap";
 import axios from "axios";
@@ -58,8 +59,9 @@ export default function RegisterScreen() {
 
   return (
     <div>
-      {/* <NavBarLogin /> */}
-      <Row className="bg-signin">
+      <NavBarLogin />
+
+      <Row className="bg-signin no-gutters">
         <Col md={8}></Col>
 
         <Col md={4}>
@@ -121,7 +123,7 @@ export default function RegisterScreen() {
                     />
                   </Form.Group>
 
-                  <div className="d-grid gap-2 mt-2">
+                  <div className="btn-register">
                     <Button variant="primary" size="md" type="submit">
                       Sign Up
                     </Button>

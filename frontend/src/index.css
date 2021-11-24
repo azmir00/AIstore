@@ -1,0 +1,234 @@
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* -------signin/register------------- */
+.title-register,
+.title-signin {
+  text-align: center;
+}
+
+.bg-signin{
+    background-image: url("./images/ai-store2.png");
+    width: 100%;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+  }
+
+.card-signin {
+    /* width: 376px;
+    height: 376px; */
+    margin-top: 150px;
+    margin-right: 50px;
+}
+
+.btn-signin Button {
+    width: 100%;
+}
+
+.card-register {
+    /* width: 376px;
+    height: auto; */
+    margin-top: 150px;
+    margin-right: 50px;
+  }
+
+.btn-register Button {
+    width: 100%;
+}
+
+/* -------End signin/register------------- */
+
+/* -------Navbar------------- */
+.nav-text {
+  color: gray;
+  font-size: 25px;
+  margin: 0px 15px 0px 15px;
+}
+
+.nav-text:hover {
+    background-color: bisque;
+    border: 3px solid #000000;
+    border-radius: 10px;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+/* -------End Navbar------------- */
+
+/* -------Homepage------------- */
+.h-services {
+    justify-items: center;
+    background-color: #ffcb65;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 200px;
+}
+
+/* -------Product category------------- */
+.cat-name {
+    margin: 150px 0px 0px 150px;
+}
+
+.v1 {
+    border-left: 10px solid #ffcb65;
+    height: 100px;
+    /* left: 50%;
+    margin-left: -3px;
+    top: 0; */
+}
+
+.row-prod-cat {
+    margin: 100px 150px 150px 150px;
+}
+
+.cat-btn-shop {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    margin: 200px 0px 0px 200px;
+  }
+
+.cat-btn-shop2 {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    margin: 200px 0px 0px 300px;
+  }
+
+/* -------End Product category------------- */
+  
+  /* -------End Homepage------------- */
+
+/* -------List Product page------------- */
+.col-listprod {
+    text-align: center;
+    border: 1px solid #000000;
+    margin: 20px 20px 20px 20px;
+  }
+
+  .listprod-img {
+    filter: blur(4px);
+}
+
+.listprod-img:hover {
+    filter: blur(0px);
+}
+
+.col-listprod:hover {
+    box-shadow: 2px 2px 8px 4px rgba(82, 59, 59, 0.25);
+  }
+
+.row-listprod {
+    margin-top: 50px;
+  }
+  
+  /* -------End List product page------------- */
+
+  /* -------Product Detail Page------------- */
+.card-productDetail {
+    margin: 50px 50px 50px 50px;
+    padding: 50px 0px 50px 0px;
+}
+
+  /* -------End Product Detail Page------------- */
+
+  /* -------Contact Us Page------------- */
+.pic-contact img {
+    width: 100%;
+    height: 600px;
+}
+
+.contact {
+    margin: 40px 200px 200px 200px;
+}
+
+.form-contact {
+    padding: 20px 20px 20px 20px;
+    border: 1px solid red;
+    margin-right: 20px;
+}
+
+.form-contact Button {
+    width: 100%;
+}
+
+.add-contact {
+    padding: 20px 20px 20px 20px;
+    border: 1px solid red;
+    margin-left: 20px;
+}
+
+   /* -------End Contact Us Page------------- */
+
+   /* -------About Us Page------------- */
+.pic-about img {
+    width: 100%;
+    height: 600px;
+}
+
+.about-ai {
+    margin-top: 50px;
+    margin-left: 150px;
+}
+
+.about-desc {
+    margin-top: 150px;
+}
+
+.about-ai p {
+    font-size: 30px;
+}
+
+.v2 {
+    border-left: 10px solid #ffcb65;
+    height: 50px;
+}
+.ab-t1 {
+    justify-content: center;
+    margin-top: 150px;
+    margin-bottom: 50px;
+}
+
+.team-pic {
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.team-person {
+    text-align: center;
+    margin: 0px 20px 0px 20px;
+}
+
+.team-person p {
+    color: grey;
+}
+
+   /* -------End About Us Page------------- */
+
+  /* -------Footer------------- */
+.footer-area {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #ffcb65;
+}
+
+.footer-area h3 {
+    color: #ffffff;
+}
+
+.footer ul, li  {
+    list-style-type: none;
+    list-style: none;
+    text-decoration: none;
+}
+
+.copyright {
+    padding-top: 20px;
+    background-color: #ecb953;
+}
+
+  /* -------End Footer------------- */

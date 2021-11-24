@@ -6,6 +6,7 @@ import axios from "axios";
 import Loading from "../components/Loading";
 import ErrorMessage from "../components/ErrorMessage";
 import signin from "../redux/actions/UserActions";
+import NavBarLogin from "../components/NavBarLogin";
 
 export default function SigninScreen() {
   const [email, setEmail] = useState("");
@@ -62,9 +63,10 @@ export default function SigninScreen() {
   // }, [history]);
 
   return (
-    <>
-      {/* <NavBarLogin /> */}
-      <Row className="bg-signin">
+    <div>
+      <NavBarLogin />
+
+      <Row className="bg-signin no-gutters">
         <Col md={8}></Col>
 
         <Col md={4}>
@@ -101,7 +103,7 @@ export default function SigninScreen() {
                     />
                   </Form.Group>
 
-                  <div className="d-grid gap-2 mt-2">
+                  <div className="btn-signin">
                     <Button
                       variant="primary"
                       size="md"
@@ -129,6 +131,6 @@ export default function SigninScreen() {
           </Card>
         </Col>
       </Row>
-    </>
+    </div>
   );
 }
