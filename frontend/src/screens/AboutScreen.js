@@ -5,7 +5,7 @@ import Footer from "../components/Footer";
 import picabout from "../images/about-us.jpg"
 import ailogo from "../images/ai-store-logo.png"
 import azmir from "../images/azmir.jpg"
-import irfan from "../images/irfan.jpeg"
+import irfan from "../images/irfan.jpg"
 
 const AboutScreen = () => {
   return (
@@ -50,6 +50,7 @@ const AboutScreen = () => {
           <Image src={irfan} width="250" height="300" rounded />
           <h2>Irfan</h2>
           <p>Back-end Developer</p>
+          <p>"If you don't try, the answer is always NO"</p>
           </div>
         </div>
       </div>
